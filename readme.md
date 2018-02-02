@@ -1,5 +1,5 @@
 # 重新安装一下Ubuntu子系统
-```lxrun /uninstall /full
+```lxrun /uninstall /full```
 lxrun /install
 
 # Register the trusted Microsoft signature key:
