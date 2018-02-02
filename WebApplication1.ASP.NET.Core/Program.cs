@@ -14,11 +14,16 @@ namespace WebApplication1.ASP.NET.Core
     {
         public static void Main(string[] args)
         {
+            if (args.Length > 0)
+            {
+                Console.WriteLine("Please Attach debugger ...");
+                Console.ReadLine();
+            }
             BuildWebHost(args).Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            WebHost.CreateDefaultBuilder(null)
                 .UseStartup<Startup>()
                 .Build();
     }
