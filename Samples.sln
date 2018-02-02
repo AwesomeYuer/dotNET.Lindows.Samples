@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1.ASP.NET.Core", "WebApplication1.ASP.NET.Core\WebApplication1.ASP.NET.Core.csproj", "{CAD3C37D-7E02-4E07-8827-EF8C55D994F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1.ASP.NET.Core", "WebApplication1.ASP.NET.Core\WebApplication1.ASP.NET.Core.csproj", "{CAD3C37D-7E02-4E07-8827-EF8C55D994F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{BBA87B18-F690-42DA-8D73-D7D6E1F044B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{BBA87B18-F690-42DA-8D73-D7D6E1F044B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Socket.EchoServer", "00.Socket.EchoServer", "{5835FCF5-2501-4652-A66C-7435F89933C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.ConsoleApp", "Socket.Echo.Server\Server.ConsoleApp\Server.ConsoleApp.csproj", "{A02C86F2-4B37-4F42-811A-27B749FF72C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Share.ClassLibrary", "Socket.Echo.Server\Share.ClassLibrary\Share.ClassLibrary.csproj", "{6EC3C4C7-83B6-435C-B766-0619CCF10F1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.ConsoleApp", "Socket.Echo.Server\Client.ConsoleApp\Client.ConsoleApp.csproj", "{7384647E-4D8E-432D-BDB2-87CEBB57B59F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,26 @@ Global
 		{BBA87B18-F690-42DA-8D73-D7D6E1F044B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBA87B18-F690-42DA-8D73-D7D6E1F044B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBA87B18-F690-42DA-8D73-D7D6E1F044B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02C86F2-4B37-4F42-811A-27B749FF72C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02C86F2-4B37-4F42-811A-27B749FF72C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02C86F2-4B37-4F42-811A-27B749FF72C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02C86F2-4B37-4F42-811A-27B749FF72C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC3C4C7-83B6-435C-B766-0619CCF10F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC3C4C7-83B6-435C-B766-0619CCF10F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC3C4C7-83B6-435C-B766-0619CCF10F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC3C4C7-83B6-435C-B766-0619CCF10F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7384647E-4D8E-432D-BDB2-87CEBB57B59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7384647E-4D8E-432D-BDB2-87CEBB57B59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7384647E-4D8E-432D-BDB2-87CEBB57B59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7384647E-4D8E-432D-BDB2-87CEBB57B59F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A02C86F2-4B37-4F42-811A-27B749FF72C1} = {5835FCF5-2501-4652-A66C-7435F89933C5}
+		{6EC3C4C7-83B6-435C-B766-0619CCF10F1B} = {5835FCF5-2501-4652-A66C-7435F89933C5}
+		{7384647E-4D8E-432D-BDB2-87CEBB57B59F} = {5835FCF5-2501-4652-A66C-7435F89933C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5252944-B31E-4C9A-9898-847008013ED4}
