@@ -1,5 +1,5 @@
-# ÖØĞÂ°²×°Ò»ÏÂUbuntu×ÓÏµÍ³
-lxrun /uninstall /full
+# é‡æ–°å®‰è£…ä¸€ä¸‹Ubuntuå­ç³»ç»Ÿ
+```lxrun /uninstall /full
 lxrun /install
 
 # Register the trusted Microsoft signature key:
@@ -14,17 +14,17 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install dotnet-sdk-2.1.4
 
-# ÏÈÒª½«µ÷ÊÔÆ÷ vsdbg ÏÂÔØµ½×ÓÏµÍ³ÖĞÔËĞĞbash
+# å…ˆè¦å°†è°ƒè¯•å™¨ vsdbg ä¸‹è½½åˆ°å­ç³»ç»Ÿä¸­è¿è¡Œbash
 sudo apt-get install unzip
 curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l ~/vsdbg
 
-# °²×°SSH,×ÓÏµÍ³¼äµÄÍ¨ĞÅ,ÒòÎªÏµÍ³²»Í¬»¹ÊÇĞèÒª°²×°SSH·şÎñÆ÷, unzip ºÍ curl »ò wget µÈ×é¼ş
+# å®‰è£…SSH,å­ç³»ç»Ÿé—´çš„é€šä¿¡,å› ä¸ºç³»ç»Ÿä¸åŒè¿˜æ˜¯éœ€è¦å®‰è£…SSHæœåŠ¡å™¨, unzip å’Œ curl æˆ– wget ç­‰ç»„ä»¶
 sudo apt-get install openssh-server unzip curl
 
-# °²×°SSHºó,ÏµÍ³²¢²»ÄÜ·ÃÎÊ±¾»úµÄÏµÍ³µÄ¶Ë¿Ú×öÍ¨ĞÅ,»¹ĞèÒªÅäÖÃÒ»¸öSSH·şÎñÆ÷µÄÅäÖÃÎÄ¼ş
+# å®‰è£…SSHå,ç³»ç»Ÿå¹¶ä¸èƒ½è®¿é—®æœ¬æœºçš„ç³»ç»Ÿçš„ç«¯å£åšé€šä¿¡,è¿˜éœ€è¦é…ç½®ä¸€ä¸ªSSHæœåŠ¡å™¨çš„é…ç½®æ–‡ä»¶
 sudo nano /etc/ssh/sshd_config
 
-# ·Ö±ğÕÒµ½ÈçÏÂÅäÖÃÏî×öĞŞ¸Ä,ĞŞ¸ÄºóµÄÄÚÈİÈçÏÂ:
+# åˆ†åˆ«æ‰¾åˆ°å¦‚ä¸‹é…ç½®é¡¹åšä¿®æ”¹,ä¿®æ”¹åçš„å†…å®¹å¦‚ä¸‹:
 UsePAM no
 UsePrivilegeSeparation no
 PasswordAuthentication yes
@@ -35,8 +35,8 @@ Port 2222
 # generate SSH keys for the SSH instance:
 sudo ssh-keygen -A
 
-# ×îºóÖØÆôÏÂSSH·şÎñ
+# æœ€åé‡å¯ä¸‹SSHæœåŠ¡
 sudo service ssh --full-restart
 
-# Ã¿´ÎÆô¶¯Bash½ø³ÌÊ±¶¼ĞèÒªÖØĞÂÆô¶¯SSH Service
+# æ¯æ¬¡å¯åŠ¨Bashè¿›ç¨‹æ—¶éƒ½éœ€è¦é‡æ–°å¯åŠ¨SSH Service
 sudo service ssh start
