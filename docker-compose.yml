@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webapplication1.asp.net.core.docker:
+    image: webapplication1.asp.net.core.docker
+    build:
+      context: .
+      dockerfile: WebApplication1.ASP.NET.Core.Docker/Dockerfile

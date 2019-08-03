@@ -4,10 +4,12 @@ Windows Subsystem for Linux
 
 # 重新安装一下Ubuntu子系统
 ```lxrun /uninstall /full```
+
 ```lxrun /install```
 
 # Register the trusted Microsoft signature key:
 ```curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg```
+
 ```sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg```
 
 # Register the Microsoft Product feed
@@ -15,11 +17,14 @@ Windows Subsystem for Linux
 
 # Install .NET SDK
 ```sudo apt-get install apt-transport-https```
+
 ```sudo apt-get update```
+
 ```sudo apt-get install dotnet-sdk-2.1.4```
 
 # 先要将调试器 vsdbg 下载到子系统中运行bash
 ```sudo apt-get install unzip```
+
 ```curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l ~/vsdbg```
 
 # 安装SSH,子系统间的通信,因为系统不同还是需要安装SSH服务器, unzip 和 curl 或 wget 等组件
@@ -30,10 +35,15 @@ Windows Subsystem for Linux
 
 # 分别找到如下配置项做修改,修改后的内容如下:
 ```UsePAM no```
+
 ```UsePrivilegeSeparation no```
+
 ```PasswordAuthentication yes```
+
 ```#PermitRootLogin prohibit-password```
+
 ```PermitRootLogin yes```
+
 ```Port 2222```
 
 # generate SSH keys for the SSH instance:
