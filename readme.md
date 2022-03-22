@@ -36,15 +36,13 @@ Windows Subsystem for Linux
 # 分别找到如下配置项做修改,修改后的内容如下:
 ```UsePAM no```
 
-```UsePrivilegeSeparation no```
+```## UsePrivilegeSeparation no```
 
 ```PasswordAuthentication yes```
 
-```#PermitRootLogin prohibit-password```
-
 ```PermitRootLogin yes```
 
-```Port 2222```
+```Port 22```
 
 # generate SSH keys for the SSH instance:
 ```sudo ssh-keygen -A```
